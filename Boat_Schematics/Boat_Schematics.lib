@@ -1,0 +1,67 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 50_Amp_Port
+#
+DEF 50_Amp_Port U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "50_Amp_Port" 0 50 50 H V C CNN
+F2 "" 0 150 50 H I C CNN
+F3 "" 0 150 50 H I C CNN
+DRAW
+C 0 -350 304 0 1 0 N
+X + ~ 0 -300 100 U 50 50 1 1 O
+X - ~ 150 -400 100 U 50 50 1 1 O
+X G ~ -150 -400 100 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Generator
+#
+DEF Generator U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "Generator" 0 250 50 H V C CNN
+F2 "" 0 350 50 H I C CNN
+F3 "" 0 350 50 H I C CNN
+DRAW
+S -200 150 200 -100 0 1 0 N
+X Starter ~ -300 100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Inverter
+#
+DEF Inverter U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "Inverter" 0 250 50 H V C CNN
+F2 "" 0 350 50 H I C CNN
+F3 "" 0 350 50 H I C CNN
+DRAW
+S -250 200 400 -900 0 1 0 N
+X BatCharger+ ~ -350 -600 100 R 50 50 1 1 I
+X BatCharger- ~ -350 -700 100 R 50 50 1 1 I
+X BatChargerG ~ -350 -800 100 R 50 50 1 1 I
+X Output+ ~ -350 100 100 R 50 50 1 1 I
+X Output- ~ -350 0 100 R 50 50 1 1 I
+X OutputG ~ -350 -100 100 R 50 50 1 1 I
+X TransferIn+ ~ -350 -250 100 R 50 50 1 1 I
+X TransferIn- ~ -350 -350 100 R 50 50 1 1 I
+X TransferInG ~ -350 -450 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Main_Engine
+#
+DEF Main_Engine U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "Main_Engine" 0 250 50 H V C CNN
+F2 "" 0 350 50 H I C CNN
+F3 "" 0 350 50 H I C CNN
+DRAW
+S -200 150 200 -100 0 1 0 N
+X ALT ~ -300 -50 100 R 50 50 1 1 I
+X Starter ~ -300 100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
